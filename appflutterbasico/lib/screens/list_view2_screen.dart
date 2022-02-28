@@ -1,4 +1,4 @@
-import 'package:appflutterbasico/screens/variables.dart';
+
 import 'package:flutter/material.dart';
 
 class ListView2Screen extends StatelessWidget {
@@ -11,8 +11,6 @@ class ListView2Screen extends StatelessWidget {
     return Scaffold(
         appBar: AppBar(
           title: const Text('ListView2'),
-          backgroundColor: colorpink,
-          elevation: 0,
         ),
         body: ListView.separated(
           itemCount: options.length,

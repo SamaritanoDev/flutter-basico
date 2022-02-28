@@ -1,5 +1,5 @@
-import 'package:appflutterbasico/screens/router.dart';
-import 'package:appflutterbasico/screens/variables.dart';
+import 'package:appflutterbasico/router/app_routes.dart';
+import 'package:appflutterbasico/theme/theme.dart';
 
 import 'package:flutter/material.dart';
 
@@ -13,13 +13,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Material App',
-      theme: ThemeData(
-        primaryColor: colorpink,
-      ),
-      //home: const CardScreen(),
       initialRoute: AppRoutes.initialRoute,
-      routes: AppRoutes.routes,
+      routes: AppRoutes.getAppRoutes(),
       onGenerateRoute: AppRoutes.onGenerateRoute,
+      theme: AppTheme.lightTheme,
     );
   }
 }
