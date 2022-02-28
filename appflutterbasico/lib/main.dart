@@ -1,6 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:appflutterbasico/screens/router.dart';
+import 'package:appflutterbasico/screens/variables.dart';
 
-import 'package:appflutterbasico/screens/screens.dart';
+import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
 
@@ -16,20 +17,9 @@ class MyApp extends StatelessWidget {
         primaryColor: colorpink,
       ),
       //home: const CardScreen(),
-      initialRoute: '/home',
-      routes: {
-        '/home': (BuildContext context) => const HomeScreen(),
-        '/listView1': (BuildContext context) => const ListView1Screen(),
-        '/listView2': (BuildContext context) => const ListView2Screen(),
-        '/cardscreen': (BuildContext context) => const CardScreen(),
-        '/alertscreen': (BuildContext context) => const AlertScreen(),
-      },
-      onGenerateRoute: (settings) {
-        print(settings);
-        return MaterialPageRoute(
-          builder: (context) => const AlertScreen(),
-          );
-      },
+      initialRoute: AppRoutes.initialRoute,
+      routes: AppRoutes.routes,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
     );
   }
 }

@@ -1,15 +1,13 @@
-import 'package:appflutterbasico/screens/screens.dart';
+import 'package:appflutterbasico/screens/variables.dart';
 import 'package:flutter/material.dart';
 
 class ListView2Screen extends StatelessWidget {
   final options = const ['Desktop', 'Web', 'Android', 'iOS', 'Linux'];
-  
-  
-   const ListView2Screen({Key? key}) : super(key: key);
-  
+
+  const ListView2Screen({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
-    
     return Scaffold(
         appBar: AppBar(
           title: const Text('ListView2'),
