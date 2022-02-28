@@ -4,7 +4,15 @@ class AppTheme {
   static const Color primary = Color.fromARGB(255, 241, 59, 171);
 
   static final ThemeData lightTheme = ThemeData(
+      //Color primario
       primaryColor: primary, 
-      appBarTheme: const AppBarTheme(color: primary, elevation: 0)
+
+      //AppBar Theme
+      appBarTheme: const AppBarTheme(color: primary, elevation: 0),
+
+      //TextButton Theme
+      textButtonTheme: TextButtonThemeData(
+        style: TextButton.styleFrom(primary: primary)
+      )
   );
 }
