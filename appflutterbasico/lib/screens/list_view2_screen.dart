@@ -1,3 +1,4 @@
+import 'package:appflutterbasico/screens/screens.dart';
 import 'package:flutter/material.dart';
 
 class ListView2Screen extends StatelessWidget {
@@ -8,7 +9,7 @@ class ListView2Screen extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    Color colorpink = const Color.fromARGB(255, 241, 59, 171);
+    
     return Scaffold(
         appBar: AppBar(
           title: const Text('ListView2'),
@@ -22,6 +23,7 @@ class ListView2Screen extends StatelessWidget {
             trailing: const Icon(Icons.arrow_forward_ios_outlined),
             onTap: () {
               final game = options[index];
+              // ignore: avoid_print
               print(game);
             },
           ),
